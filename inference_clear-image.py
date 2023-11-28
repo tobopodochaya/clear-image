@@ -13,7 +13,7 @@ from facelib.utils.misc import is_gray
 from basicsr.utils.registry import ARCH_REGISTRY
 
 pretrain_model_url = {
-    'restoration': 'https://drive.google.com/file/d/1U3lnCDkomNt189r1RaGUxZPpVdcf_Hjj/view?usp=drive_link',
+    'restoration': 'https://www.kaggle.com/datasets/tobopododhaya/clear-image/download?datasetVersionNumber=1',
 }
 
 def set_realesrgan():
@@ -36,7 +36,7 @@ def set_realesrgan():
     )
     upsampler = RealESRGANer(
         scale=2,
-        model_path="https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/RealESRGAN_x2plus.pth",
+        model_path="https://www.kaggle.com/datasets/tobopododhaya/real-sr/download?datasetVersionNumber=1",
         model=model,
         tile=args.bg_tile,
         tile_pad=40,
